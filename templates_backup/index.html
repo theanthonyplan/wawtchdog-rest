@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+
+{% block content %}
+    {% for game in game_list %}
+        {% include "_game.html" with game=game only %}
+    {% empty %}
+        <p>No blog entries yet.</p>
+    {% endfor %}
+{% endblock content %}

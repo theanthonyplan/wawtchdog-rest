@@ -1,0 +1,13 @@
+<article>
+
+    <h2><a href="{{ game.get_absolute_url }}">{{game.appid}} - {{ game.title }}</a></h2>
+    <h5><a href="{{game.steam_url}}">Steam Product Page</a></h5>
+    <p class="subheader">
+        <time>{{ game.updated_at|date }}</time>
+    </p>
+
+    <p></p>
+
+    {{ game.body|linebreaks }}
+
+</article>
